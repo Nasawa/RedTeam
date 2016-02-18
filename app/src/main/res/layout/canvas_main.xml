@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="top|center"-->
+        <!--android:text="ABC's of Android Game Dev" />-->
+    <!--<Button-->
+        <!--android:id="@+id/the_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:enabled="false"-->
+        <!--android:text="Reset" />-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="Sprite Speed (?,?)"-->
+        <!--android:id="@+id/the_label" />-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="Last Collision XY (?,?)"-->
+        <!--android:id="@+id/the_other_label" />-->
+    <com.anigeek.canvastest.GameBoard
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/the_canvas"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"/>
+    <ImageButton
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:src="@drawable/drop"
+        android:scaleType="fitXY"/>
+    <ImageButton
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/button"
+        android:scaleType="fitXY"
+        android:src="@drawable/bars"
+        android:foregroundTint="#639aff"/>
+
+</RelativeLayout>
